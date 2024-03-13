@@ -1,9 +1,8 @@
 /*
-你好! 欢迎使用 LR 本地包。酷安第一弹，不清楚是不是最后版。 
+你好! 欢迎使用 LR 在线仓库。github速度慢可以复制仓库挂在其它(极狐) 仓库等! 
 解析接口部分为付费内容不分享 请花钱! 
 电视WebView版本老会导致一些网站看不了 只能升级WebView才能提升电视观影体验。
-网站打不开，看不了 可能存在域名污染，跟换dns解析即可。
-好心的小伙伴可以挂在线分享出来! 谢谢
+网站打不开，可能存在域名污染，更换dns解析即可。
 搬运请备注来源! 谢谢
 */
 
@@ -32,12 +31,11 @@
 {"key":"豆瓣","name":"豆瓣｜评分｜推荐","type":3,"api":"csp_Douban","ext":"./lib/豆瓣.json"},
 {"key":"急救","name":"急救｜指南｜推荐","type":3,"api":"csp_FirstAid","searchable":0,"quickSearch":0,"changeable":0,"style": {"type": "rect", "ratio":3.8}},
 {"key":"360","name":"三零｜影视｜弹幕","type":3,"api":"csp_Sp360","playerType":2,"searchable":1,"quickSearch":1,"filterable":1,"jar":"./jar/928.jar"},
-{"key":"柠檬","name":"柠檬｜影视｜蓝光","type":3,"api":"csp_Fdys","searchable":1,"quickSearch":1,"filterable":1,"ext":"","jar":"./jar/qj.jar"},
 {"key":"天天","name":"天天｜影视｜蓝光","type":3,"api":"csp_TTian","playerType":1,"searchable":1,"quickSearch":1,"changeable":1,"ext":"http://op.ysdqjs.cn","jar":"./jar/pg.jar"},
 {"key":"荐片","name":"荐片｜磁力｜蓝光","type":3,"api":"csp_Jianpian","searchable":1,"quickSearch":1,"changeable":1,"ext":"./lib/jianpian.json"},
 {"key":"HDmoli","name":"低端｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/HDmoli.js"},
 {"key":"LIBVIO","name":"利播｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBVIO.js"},
-{"key":"LIBHD","name":"哔哔｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBHD.js"},
+{"key":"LIBHD","name":"立白｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBHD.js"},
 {"key":"厂长","name":"厂长｜美剧｜蓝光","type":3,"api":"csp_Czzy","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.czzy55.com","jar":"./jar/LR.jar"},
 {"key":"在线","name":"在线｜美剧｜蓝光","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"changeable":1,"jar":"./jar/LR.jar"},
 {"key":"追剧","name":"追剧｜影视｜蓝光","type":3,"api":"csp_TTian","playerType":1,"searchable":1,"quickSearch":1,"changeable":1,"ext":"http://app.kzjtv.com","jar":"./jar/pg.jar"},
