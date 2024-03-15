@@ -34,9 +34,9 @@ var rule = {
         });
     `,
      二级: {
-         "title": "h1&&Text;.hl-ma0&&Text",
-         "img": ".module-item-pic&&img&&data-src",
-         "desc": ".slide-info-remarks&&Text;.video-info-items:eq(2)&&Text;.video-infs&&Text;.video-info-item:eq(1)&&Text;.video-info-items:eq(0)&&Text",
+          "title": "h1&&Text;.hl-ma0&&Text",
+          "img": ".module-item-pic&&img&&data-src",
+          "desc": ".slide-info-remarks&&Text;.gen-search-form&&li:eq(4)&&Text;.gen-search-form&&li:eq(5)&&Text;.gen-search-form&&li:eq(2)&&Text;.gen-search-form&&li:eq(3)&&Text",
           "content": "#height_limit&&Text",
           "tabs": ".anthology-tab&&a",
           "lists": ".anthology-list-box:eq(#id)&&li"
