@@ -53,7 +53,7 @@
 {"key":"南瓜","name":"南瓜｜影视｜高清","type":3,"api":"csp_NanGua","searchable":1,"quickSearch":1,"filterable":1,"jar":"./jar/qj.jar"},
 {"key":"看美剧","name":"剧社｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/看美剧.js"},
 {"key":"热播","name":"热播｜影视｜高清","type":3,"api":"csp_TTian","playerType":1,"ext":"http://v.rbotv.cn","jar":"./jar/pg.jar"},
-{"key":"爱看","name":"爱看｜影视｜高清","type":3,"api":"csp_Ayy","searchable":1,"quickSearch":1,"changeable":1,"ext": "https://www.netflixgc.com","jar":"./jar/LR.jar"},
+{"key":"爱看","name":"爱看｜影视｜高清","type":3,"api":"csp_Ayy","searchable":1,"quickSearch":1,"changeable":1,"jar":"./jar/LR.jar"},
 {"key":"视觉","name":"视觉｜影视｜高清","type":3,"api":"csp_Xsj","searchable":1,"changeable":1,"jar":"./jar/LR.jar"},
 {"key":"耐看","name":"耐看｜影视｜高清","type":3,"api":"./lib/drpy2.min.js","searchable":1,"quickSearch":1,"filterable":1,"ext":"./JS/耐看点播.js"},
 {"key":"魔力","name":"魔力｜影视｜高清","type":3,"api":"csp_Hdmoli","searchable":1,"quickSearch":1,"changeable":1,"jar":"./jar/LR.jar"},
