@@ -15,8 +15,38 @@ var rule = {
      class_url:'1&2&4&3',
      play_parse: true,
      tab_exclude:'夸克网盘|百度云盘|UC网盘|SN|FX',
-     lazy: '',
-     limit: 6,
+     lazy:`js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        var from = html.from;
+        var next = html.link_next;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        } else if (html.encrypt == '3') {
+            url = url.substring(8, url.length);
+            url = base64Decode(url);
+            url = url.substring(8, (url.length) - 8)
+        }
+        if (/\\.m3u8|\\.mp4/.test(url)) {
+            input = {
+                jx: 0,
+                url: url,
+                parse: 0
+            }
+        } else {
+            var paurl = request(HOST + '/static/player/' + from + '.js').match(/ src="(.*?)'/)[1];
+            if (/https/.test(paurl)) {
+                var purl = paurl + url + '&next=' + next + '&title=';
+                input = {
+                    jx: 0,
+                    url: purl,
+                    parse: 1
+                }
+            }
+        }
+    `,
      推荐: '*',
      double: true, // 推荐内容是否双层定位
      一级: '.public-list-exp;a&&title;img&&data-src;.ft2&&Text;a&&href',
