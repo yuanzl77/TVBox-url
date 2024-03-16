@@ -17,19 +17,19 @@
       "url": "./live.m3u",
       "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
       "epg": "https://epg.erw.cc/api/diyp/?ch={name}&date={date}",
-      "logo": "https://gh.con.sh/https://raw.githubusercontent.com/yuanzl77/TVBox-logo/main/png/{name}.png"
+      "logo": "https://cdn.jsdelivr.net/gh/yuanzl77/TVBox-logo@main/png/{name}.png"
     },
     {
       "name": "IPV6",
       "type": 0,
       "url": "https://gh.con.sh/https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
       "epg": "https://epg.erw.cc/api/diyp/?ch={name}&date={date}",
-      "logo": "https://gh.con.sh/https://raw.githubusercontent.com/yuanzl77/TVBox-logo/main/png/{name}.png"
+      "logo": "https://cdn.jsdelivr.net/gh/yuanzl77/TVBox-logo@main/png/{name}.png"
     }
   ],
 
 "sites":[
-{"key":"豆瓣","name":"豆瓣｜评分｜推荐","type":3,"api":"csp_Douban","ext":"./lib/豆瓣.json"},
+{"key":"豆瓣","name":"豆瓣｜评分｜推荐","type":3,"api":"csp_Douban","ext":"https://cdn.jsdelivr.net/gh/yuanzl77/TVBox-url@main/lib/豆瓣.json"},
 {"key":"急救","name":"急救｜指南｜推荐","type":3,"api":"csp_FirstAid","searchable":0,"quickSearch":0,"changeable":0,"style": {"type": "rect", "ratio":3.8}},
 {"key":"360","name":"三零｜影视｜弹幕","type":3,"api":"csp_Sp360","playerType":2,"searchable":1,"quickSearch":1,"filterable":1,"jar":"./jar/928.jar"},
 {"key":"天天","name":"天天｜影视｜蓝光","type":3,"api":"csp_TTian","playerType":1,"searchable":1,"quickSearch":1,"changeable":1,"ext":"http://op.ysdqjs.cn","jar":"./jar/pg.jar"},
@@ -60,9 +60,9 @@
 
 #云盘
 {"key":"运输","name":"运输｜云盘｜4K","type":3,"api":"csp_Yingshiche","searchable":1,"filterable":1,"changeable":0,"playerType":2,"timeout":25,"ext": {"token":"http://127.0.0.1:9978/file/TVBox/token.txt","cookie":"http://127.0.0.1:9978/file/TV/quark.txt"}},
-{"key":"玩偶","name":"玩偶｜云盘｜4K","type":3,"api":"csp_Wogg","searchable":1,"filterable":1,"changeable":0,"playerType":2,"timeout":25,"ext": {"token":"http://127.0.0.1:9978/file/TVBox/token.txt","filter":"./lib/wogg.json"}},
-{"key":"土豆","name":"土豆｜云盘｜4K","type":3,"api":"csp_Wobg","searchable":1,"quickSearch":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/TVBox/token.json$$$http://aliz.lvdoui.top$$$1$$$./lib/wogg.json","timeout":30,"jar":"./jar/pg.jar"},
-{"key":"玩我","name":"玩我｜云盘｜4K","type":3,"api":"csp_Wobg","searchable":1,"quickSearch":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/TVBox/token.json$$$http://www.ttkx.live$$$1$$$./lib/wogg.json","timeout":30,"jar":"./jar/pg.jar"},
+{"key":"玩偶","name":"玩偶｜云盘｜4K","type":3,"api":"csp_Wogg","searchable":1,"filterable":1,"changeable":0,"playerType":2,"timeout":25,"ext": {"token":"http://127.0.0.1:9978/file/TVBox/token.txt","filter":"https://cdn.jsdelivr.net/gh/yuanzl77/TVBox-url@main/lib/wogg.json"}},
+{"key":"土豆","name":"土豆｜云盘｜4K","type":3,"api":"csp_Wobg","searchable":1,"quickSearch":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/TVBox/token.json$$$http://aliz.lvdoui.top$$$1$$$https://cdn.jsdelivr.net/gh/yuanzl77/TVBox-url@main/lib/wogg.json","timeout":30,"jar":"./jar/pg.jar"},
+{"key":"玩我","name":"玩我｜云盘｜4K","type":3,"api":"csp_Wobg","searchable":1,"quickSearch":1,"changeable":0,"ext":"http://127.0.0.1:9978/file/TVBox/token.json$$$http://www.ttkx.live$$$1$$$https://cdn.jsdelivr.net/gh/yuanzl77/TVBox-url@main/lib/wogg.json","timeout":30,"jar":"./jar/pg.jar"},
 {"key":"影巢","name":"影巢｜云盘｜4K","type":3,"api":"csp_Hdhive","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://127.0.0.1:9978/file/TVBox/token.txt","timeout":25,"jar":"./jar/pg.jar"},
 {"key":"秒搜","name":"秒搜｜云盘｜搜索","type":3,"api":"csp_MiaoSou","timeout":25,"ext":"http://127.0.0.1:9978/file/TVBox/token.txt","jar":"./jar/pg.jar"},
 {"key":"盘搜","name":"盘搜｜云盘｜搜索","type":3,"api":"csp_PanSearch","searchable":1,"filterable":1,"playerType":2,"changeable":0,"timeout":25,"ext":"http://127.0.0.1:9978/file/TVBox/token.txt"},
