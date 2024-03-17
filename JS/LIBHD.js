@@ -37,16 +37,6 @@ var rule = {
             }
         }
      `,
-     sniffer:1,
-     isVideo:"http((?!http).){26,}\\.(m3u8|mp4|flv|avi|mkv|wmv|mpg|mpeg|mov|ts|3gp|rm|rmvb|asf|m4a|mp3|wma)",
-     isVideo:`js:
-     log(input);
-     if(/m3u8/.test(input)){
-     input = true
-     }else{
-     input = false
-     }
-     `,
      limit: 6,
      推荐: '*',
      double: true, // 推荐内容是否双层定位
