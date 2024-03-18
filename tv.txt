@@ -49,6 +49,7 @@
 {"key":"狗番","name":"狗番｜动漫｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/狗番.js"},
 {"key":"二乐","name":"二乐｜动漫｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/EL动漫.js"},
 {"key":"喵物","name":"喵物｜动漫｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/喵物次元.js"},
+{"key":"嗷呜","name":"嗷呜｜动漫｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/嗷呜动漫.js"},
 {"key":"咕咕","name":"咕咕｜动漫｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/咕咕番.js"},
 
 #备用
