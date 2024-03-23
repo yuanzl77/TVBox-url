@@ -26,6 +26,7 @@ var rule = {
      limit: 6,
      class_name:'电影&剧集&动漫',
      class_url:'1&2&3',
+     tab_exclude:'SN|KK|LS|阿里|夸克',
      double: false, // 推荐内容是否双层定位
      推荐: '.public-list-exp;a&&title;img&&data-src;.ft2&&Text;a&&href',
      一级:`js:
