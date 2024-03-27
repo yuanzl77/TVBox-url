@@ -19,7 +19,7 @@ var rule = {
         var url = html.url;
         var from = html.from;
         var next = html.link_next;
-        if (/LIBMP|LIBYD|LIBWO|LIBZH/.test(from)) {
+        if (/LIBMP|LIBYD|LIBWO|LIBZH|LIBTY|LIBAL/.test(from)) {
             input = {
                 jx: 0,
                 url: 'https://play.speechless.pw/bf/jiami/?url=' +url,
