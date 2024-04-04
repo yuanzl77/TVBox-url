@@ -14,7 +14,7 @@
     {
       "name": "直播",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/gh/yuanzl77/IPTV@main/live.m3u",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u",
       "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
       "epg": "https://epg.erw.cc/api/diyp/?ch={name}&date={date}",
       "logo": "https://cdn.jsdelivr.net/gh/yuanzl77/TVBox-logo@main/png/{name}.png"
