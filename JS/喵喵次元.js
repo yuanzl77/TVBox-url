@@ -33,8 +33,8 @@ globalThis.posturl=function(url,json){
 }
 var rule = {
     title: '喵次元[APP]',
-    host: 'https://cym.zhui.la/api.php',
-    hostJs:`
+    host: 'https://cym.fengche.tv/api.php/',
+	hostJs:`
     var json2 = '{"versionName":"5.6.9","uuid":"9cc01079c64e2495","version":"4835d0a2","versionCode":"35","ctime":"'+getTime()+'"}';
     let url="https://cym.zhui.la/api.php/type/get_list";
     let jo=posturl(url,json2).data.list;
