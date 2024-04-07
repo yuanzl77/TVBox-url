@@ -46,7 +46,7 @@
 {"key":"LIBVIO","name":"LIB｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBVIO.js"},
 {"key":"LIBHD","name":"利播｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBHD.js"},
 {"key":"在线","name":"在线｜美剧｜蓝光","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"changeable":1,"jar":"./jar/LR.jar"},
-{"key":"厂长","name":"厂长｜美剧｜蓝光","type":3,"api":"csp_Czzy","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.czzy55.com","jar":"./jar/LR.jar"},
+{"key":"厂长","name":"厂长｜美剧｜蓝光","type":3,"api":"csp_Czzy","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.czzy77.com","jar":"./jar/LR.jar"},
 {"key":"奈飞","name":"奈飞｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/奈飞工厂.js"},
 {"key":"文才","name":"文才｜影视｜蓝光","type":3,"api":"csp_XBPQ","searchable":1,"changeable":1,"ext":"./XBPQ/文才影视.js","jar":"./jar/XBPQ.jar"},
 {"key":"追剧","name":"追剧｜影视｜蓝光","type":3,"api":"csp_TTian","playerType":1,"searchable":1,"quickSearch":1,"changeable":1,"ext":"http://app.kzjtv.com$$$null$$$1","jar":"./jar/pg.jar"},
