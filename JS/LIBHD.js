@@ -26,15 +26,6 @@ var rule = {
                 parse: 1
             }
         } else {
-            var paurl = request(HOST + '/static/player/' + from + '.js').match(/ src="(.*?)'/)[1];
-            if (/https/.test(paurl)) {
-                var purl = paurl + url + '&next=' + next + '&title=';
-                input = {
-                    jx: 0,
-                    url: purl,
-                    parse: 1
-                }
-            }
         }
      `,
      limit: 6,
