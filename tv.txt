@@ -36,14 +36,14 @@
 
 
 "sites":[
-{"key":"豆瓣","name":"豆瓣｜评分｜推荐","type":3,"api":"csp_Douban","ext":"./lib/豆瓣.json"},
+{"key":"豆瓣","name":"导航｜https://yuanzl77.github.io｜LR荐","type":3,"api":"csp_Douban","ext":"./lib/豆瓣.json"},
 {"key":"急救","name":"急救｜指南｜推荐","type":3,"api":"csp_FirstAid","searchable":0,"quickSearch":0,"changeable":0,"style": {"type": "rect", "ratio":3.8}},
-{"key":"360","name":"三零｜影视｜弹幕","type":3,"api":"csp_Sp360","playerType":2,"searchable":1,"quickSearch":1,"filterable":1,"jar":"./jar/928.jar"},
-{"key":"爱酷","name":"爱酷｜影视｜采集","type":1,"api":"https://cj.json.icu/aiku.php/provide/vod/?ac=list","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"360","name":"导航｜https://yuanzl77.github.io｜LR","type":3,"api":"csp_Sp360","playerType":2,"searchable":1,"quickSearch":1,"filterable":1,"jar":"./jar/928.jar"},
+{"key":"爱酷","name":"导航｜https://yuanzl77.github.io｜LR","type":1,"api":"https://cj.json.icu/aiku.php/provide/vod/?ac=list","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"天天","name":"天天｜影视｜蓝光","type":3,"api":"csp_TTian","playerType":1,"searchable":1,"quickSearch":1,"changeable":1,"ext":"http://op.ysdqjs.cn","jar":"./jar/qj.jar"},
 {"key":"荐片","name":"荐片｜磁力｜蓝光","type":3,"api":"csp_Jianpian","searchable":1,"quickSearch":1,"changeable":1,"ext":"./lib/jianpian.json"},
 {"key":"HDmoli","name":"低端｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/HDmoli.js"},
-{"key":"LIBVIO","name":"LIB｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBVIO.js"},
+{"key":"LIBVIO","name":"LIB｜美剧｜蓝光｜https://yuanzl77.github.io","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBVIO.js"},
 {"key":"LIBHD","name":"利播｜美剧｜蓝光","type":3,"api":"./lib/drpy2.min.js","searchable":1,"changeable":1,"ext":"./JS/LIBHD.js"},
 {"key":"在线","name":"在线｜美剧｜蓝光","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.zxzja.com","jar":"./jar/LR.jar"},
 {"key":"厂长","name":"厂长｜美剧｜蓝光","type":3,"api":"csp_Czzy","searchable":1,"quickSearch":1,"changeable":1,"ext":"https://www.czys01.com","jar":"./jar/LR.jar"},
@@ -90,7 +90,7 @@
 ],
 
 "parses":[
-        {"name":"LR","type":1,"url":"https://api.json.icu/api/?key=92eebc17b8bf5741650f4af91d511009&url=","ext":{"flag":["imgo","migu","qq","qiyi","mgtv","bilibili","youku"],"header":{"User-Agent":"Dart/2.18 (dart:io)"}}},
+        {"name":"https://yuanzl77.github.io","type":1,"url":"https://api.json.icu/api/?key=92eebc17b8bf5741650f4af91d511009&url=","ext":{"flag":["imgo","migu","qq","qiyi","mgtv","bilibili","youku"],"header":{"User-Agent":"Dart/2.18 (dart:io)"}}},
         {"name":"LR2","type":1,"url":"http://111.229.65.161/za.php?url=","ext":{"flag":["imgo","migu","qq","qiyi","mgtv","bilibili","youku","seven","NBY"],"header":{"User-Agent":"okhttp-okgo/jeasonlzy"}}},
         {"name":"LR3","type":1,"url":"http://119.91.123.253:2345/Api/yun.php?url=","ext":{"flag":["imgo","migu","qq","qiyi","mgtv","bilibili","youku"],"header":{"User-Agent":"okhttp/3.12.0"}}},
         {"name":"LR4","type":1,"url":"http://121.62.61.51:6888/api/?key=eIQ9JzXVIzkY3ZSoEZ&url=","ext":{"flag":["imgo","migu","qq","qiyi","mgtv","bilibili","youku","seven","NBY"],"header":{"User-Agent":"okhttp-okgo/jeasonlzy"}}},
