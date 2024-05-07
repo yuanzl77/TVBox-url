@@ -18,14 +18,20 @@ var rule = {
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
         var from = html.from;
-        var next = html.link_next;
-        if (/LIBMP|LIBYD|LIBWO|LIBZH|LIBTY|LIBAL/.test(from)) {
-            input = {
-                jx: 0,
-                url: 'https://play.speechless.pw/bf/jiami/?url=' +url,
-                parse: 1
-            }
+        var MacPlayerConfig={};
+        if (/.m3u8|.mp4/.test(url)) {
+            input = url
         } else {
+        eval(fetch(HOST + "/static/js/playerconfig.js").replace('var Mac','Mac'));
+        var list = MacPlayerConfig.player_list[from].parse;
+            input={
+                jx:0,
+                url:list+url,
+                parse:1,
+                header: JSON.stringify({
+                    'referer': HOST
+                })
+            }
         }
      `,
      limit: 6,
