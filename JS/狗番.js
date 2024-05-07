@@ -1,7 +1,6 @@
 var rule = {
      title: '狗番',
      host: 'https://www.dogsfun.fun',
-     模板:'首图2',
      searchUrl: '/vodsearch/**----------fypage---',
      url: '/show/fyclass--------fypage---',
      searchable: 2,//是否启用全局搜索,
@@ -14,7 +13,7 @@ var rule = {
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
         var from = html.from;
-        var next = html.link_next;
+        var MacPlayerConfig={};
         if (html.encrypt == '1') {
             url = unescape(url)
         } else if (html.encrypt == '2') {
@@ -23,23 +22,20 @@ var rule = {
             url = base64Decode(url);
         }
         if (/\\.m3u8|\\.mp4/.test(url)) {
-            input = {
-                jx: 0,
-                url: url,
-                parse: 0
-            }
+            input = url
         } else {
-            var paurl = request(HOST + '//union.maccms.la/html/' + from + '.html').match(/ src='(.*?)'/)[1];
-            if (/https/.test(paurl('https://www.dogsfun.fun/play/dogsfun.php?url='))) {
-                var purl = paurl + url + '&next=' + next + '&title=';
-                input = {
-                    jx: 0,
-                    url: purl,
-                    parse: 1
-                }
+            eval(fetch(HOST + "/static/js/playerconfig.js").replace('var Mac','Mac'));
+            var list = MacPlayerConfig.player_list[from].parse;
+            input={
+                jx:0,
+                url:list+url,
+                parse:1,
+                header: JSON.stringify({
+                    'referer': HOST
+                })
             }
         }
-    `,
+    `，
     推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-tag-left&&Text;a&&href',
     一级: '.stui-vodlist li;a&&title;a&&data-original;.pic-tag-left&&Text;a&&href',
     二级:{
