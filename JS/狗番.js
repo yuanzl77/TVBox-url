@@ -1,6 +1,7 @@
 var rule = {
      title: '狗番',
      host: 'https://www.dogsfun.fun',
+     模板:'首图2',
      searchUrl: '/vodsearch/**----------fypage---',
      url: '/show/fyclass--------fypage---',
      searchable: 2,//是否启用全局搜索,
@@ -35,7 +36,7 @@ var rule = {
                 })
             }
         }
-    `，
+    `,
     推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-tag-left&&Text;a&&href',
     一级: '.stui-vodlist li;a&&title;a&&data-original;.pic-tag-left&&Text;a&&href',
     二级:{
