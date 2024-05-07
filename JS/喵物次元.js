@@ -1,9 +1,9 @@
 var rule = {
      title: '喵物次元',
-     host: 'https://catw.moe',
+     host: 'https://catwcy.com',
      模板:'短视2',
-     searchUrl: '/index.php/vod/search/wd/**.html',
-     url:'index.php/vod/show/id/fyclass/page/fypage.html',
+     searchUrl: '/catsearch/page/fypage/wd/**.html',
+     url:'/catshow/fyclass/page/fypage.html',
      searchable: 2,//是否启用全局搜索,
      quickSearch: 1,//是否启用快速搜索,
      filterable: 0,//是否启用分类筛选,
