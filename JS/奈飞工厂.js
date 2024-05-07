@@ -12,23 +12,30 @@ var rule = {
        'User-Agent': 'MOBILE_UA'
      },
      lazy:`js:
-         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-         var url = html.url;
-         if (html.encrypt == '1') {
-             url = unescape(url)
-         } else if (html.encrypt == '2') {
-             url = unescape(base64Decode(url))
-         }
-         if (/\\.m3u8|\\.mp4/.test(url)) {
-             input = {
-                 jx: 0,
-                 url: url,
-                 parse: 0
-             }
-         } else {
-             input
-         }
-     `, 
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        var from = html.from;
+        var MacPlayerConfig={};
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/.m3u8|.mp4/.test(url)) {
+            input = url
+        } else {
+        eval(fetch(HOST + "/static/js/playerconfig.js").replace('var Mac','Mac'));
+        var list = MacPlayerConfig.player_list[from].parse;
+            input={
+                jx:0,
+                url:list+url,
+                parse:1,
+                header: JSON.stringify({
+                    'referer': HOST
+                })
+            }
+        }
+     `,
      limit: 6,
      class_name:'电影&剧集&动漫',
      class_url:'1&2&3',
