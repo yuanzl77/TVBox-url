@@ -23,8 +23,8 @@ var rule = {
            'img':'.lazyload&&data-original',
            'desc':'.tbody;td:eq(11);td:eq(7);td:eq(21);td:eq(17)',
            'content':'.player-detail p&&Text',
-           'tabs':'.col2-item',
-           'lists':'.col2-item:eq(#id) a'
+           'tabs':'.col2-item-title',
+           'lists':'.col2-wrapper:eq(#id) a'
          },
      搜索: '*'
     }

@@ -9,6 +9,7 @@ var rule = {
      quickSearch: 1,//是否启用快速搜索,
      filterable:0,//是否启用分类筛选,
      headers: {
+       'Cookie': 'PHPSESSID=e6alj2s5i6gvk0urjp3iqkkfl0; ecPopup=1; _funcdn_token=5ff10ed9fc178af6e2645e44cd768d232acba767ebaa33a15e4d2682b97264a6; user_id=10992; user_name=yuanzl77; group_id=2; group_name=NXVIP; user_check=e59a37f5a4fec0072cb512869352f402; user_portrait=%2Fstatic%2Fimages%2Ftouxiang.png',
        'User-Agent': 'MOBILE_UA'
      },
      lazy:`js:

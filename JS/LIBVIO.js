@@ -1,7 +1,7 @@
-// 永久网址：https://libvio.app
+//发布网址：http://www.libfabu.com/
 var rule = {
     title:'LIBVIO',
-    host:'https://www.libvio.pw',
+    host:'https://www.libvio.cc',
     url:'/show/fyclassfyfilter.html',
     searchUrl:'/search/-------------.html?wd=**&submit=',
     detailUrl:'/detail/fyid.html', //非必填,二级详情拼接链接

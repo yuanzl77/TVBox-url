@@ -1,6 +1,6 @@
 var rule = {
     title:'耐看点播',
-    host:'https://nkdyw.us',
+    host:'https://nkvlog.com',
     模板:'mxpro',
     searchUrl:'/nk/**----------fypage---.html',
     detailUrl:'/voddetail/fyid.html', //非必填,二级详情拼接链接
@@ -8,7 +8,7 @@ var rule = {
     filterable:0,//是否启用分类筛选,
     headers: {
        'User-Agent': 'MOBILE_UA',
-       'Cookie': 'mx_style=white; PHPSESSID=kg0gdqp1bfsktjjc15phrffe5t; mac_history_mxpro=%5B%7B%22vod_name%22%3A%22%E7%B4%AB%E5%B7%9D%C2%B7%E5%85%89%E6%98%8E%E4%B8%89%E6%9D%B0%22%2C%22vod_url%22%3A%22https%3A%2F%2Fnkdyw.us%2Fplay%2F177615-7-1.html%22%2C%22vod_part%22%3A%22%E7%AC%AC01%E9%9B%86%22%7D%5D; showBtn=true; guard=85e65e713rWD'
+       'Cookie': 'mx_style=white; showBtn=true; PHPSESSID=f1nl4r0m5lt3agnac82jfbmrj8; guard=8152a9d2Dtc4171961779198'
      },
     tab_rename:{'排序':'LR',},
     /*
